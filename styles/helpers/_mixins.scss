@@ -35,7 +35,7 @@
 
 @mixin square($size) {
   width: $size;
-  aspect-ratio: $size;
+  aspect-ratio: 1;
 }
 
 @mixin visually-hidden {
