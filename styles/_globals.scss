@@ -1,11 +1,17 @@
 @use 'helpers/index' as *;
 
 body {
+  display: flex;
+  flex-direction: column;
   @include fluid-text(18,14);
   font-family: var(--font-family-base);
   letter-spacing: -0.03em;
   color: var(--color-gray-50);
   background-color: var(--color-dark);
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1, .h1,
