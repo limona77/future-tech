@@ -24,11 +24,16 @@
     background-color: var(--color-dark-10);
     border-color: var(--color-accent);
   }
+
   &--accent {
     color: var(--color-dark);
     background-color: var(--color-accent);
     border-color: var(--color-accent);
     font-weight: 500;
     border-radius: rem(8);
+  }
+
+  &--dark-gray {
+    background-color: var(--color-dark-10);
   }
 }
