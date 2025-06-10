@@ -11,6 +11,10 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+    &--small {
+      height: fluid(290,208);
+    }
   }
 
   &__panel {
@@ -23,6 +27,10 @@
     padding: rem(30);
     transition-duration: var(--transition-duration);
 
+    &--center {
+      justify-content: center;
+      align-items:center;
+    }
     &:not(.is-active) {
       @include hide;
     }
