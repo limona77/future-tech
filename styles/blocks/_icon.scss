@@ -5,17 +5,17 @@
   align-items: center;
   column-gap: rem(10);
 
-  &::after{
+  &::after {
     --size: #{rem(24)};
 
     @include square(var(--size));
 
     content: '';
-    flex-shrink:0;
-
+    flex-shrink: 0;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
     @include laptop {
       --size: #{rem(20)};
     }
@@ -23,13 +23,13 @@
 
   &--yellow-arrow {
     &::after {
-      background-image: url("../../icons/arrow-top-right_yellow.svg");
+      background-image: url('../../icons/arrow-top-right_yellow.svg');
     }
   }
 
   &--yellow-eye {
     &::after {
-      background-image: url("../../icons/eye_yellow.svg");
+      background-image: url('../../icons/eye_yellow.svg');
     }
   }
 
