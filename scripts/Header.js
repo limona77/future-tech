@@ -6,7 +6,7 @@ class Header {
   }
 
   stateClasses = {
-    isActive:'is-active',
+    isActive: 'is-active',
     isLock: 'is-lock',
   }
 
@@ -16,17 +16,16 @@ class Header {
     this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton)
     this.bindEvents()
   }
+
   onBurgerButtonClick = () => {
     this.burgerButtonElement.classList.toggle(this.stateClasses.isActive)
     this.overlayElement.classList.toggle(this.stateClasses.isActive)
-    console.log(document.body.classList)
-    document.body.classList.toggle(this.stateClasses.isLock)
+    document.documentElement.classList.toggle(this.stateClasses.isLock)
   }
+
   bindEvents() {
     this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
   }
-
-
 }
 
 export default Header
